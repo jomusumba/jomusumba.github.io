@@ -2,263 +2,1304 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Jonathan Musumba, développeur passionné spécialisé en Python, Flutter, et Intelligence Artificielle. Découvrez mes projets, compétences et expériences.">
-    <title>Portfolio - Jonathan MUSUMBA</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="images/ejyisoft.jpg">
-    <link rel="apple-touch-icon" href="images/ejyisoft.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Portfolio de Jonathan Musumba (JO MUSUMBA), développeur Python, Flutter et IA. Projets, services, expériences, chatbots et solutions tech à Lubumbashi.">
+    <meta name="keywords" content="Jonathan Musumba, Jo Musumba, JO MUSUMBA, développeur, Python, Flutter, IA, Machine Learning, chatbots, portfolio, Lubumbashi, RDC, EJYISOFT">
+    <meta name="author" content="Jonathan Musumba">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#00aaff">
+    <link rel="canonical" href="https://jomusumba.me/">
+    <title>Jonathan MUSUMBA | Développeur Python, Flutter & IA | CEO EJYISOFT</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Jonathan Musumba">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:url" content="https://jomusumba.me/">
+    <meta property="og:title" content="Jonathan MUSUMBA | Développeur Python, Flutter & IA">
+    <meta property="og:description" content="Portfolio de Jonathan Musumba (JO MUSUMBA). Projets, services et solutions tech en Python, Flutter et IA.">
+    <meta property="og:image" content="https://jomusumba.me/images/jm.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jonathan MUSUMBA | Développeur Python, Flutter & IA">
+    <meta name="twitter:description" content="Portfolio de Jonathan Musumba (JO MUSUMBA). Projets, services et solutions tech en Python, Flutter et IA.">
+    <meta name="twitter:image" content="https://jomusumba.me/images/jm.webp">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="images/ejyisoft.webp">
+    <link rel="apple-touch-icon" href="images/ejyisoft.webp">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts (loaded in HTML for performance instead of CSS @import) -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;600&display=swap"></noscript>
+
+    <!-- Font Awesome with SRI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data: Person -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jonathan Musumba",
+        "alternateName": ["Jo Musumba", "JO MUSUMBA"],
+        "jobTitle": "Développeur Python, Flutter & IA",
+        "url": "https://jomusumba.me/",
+        "image": "https://jomusumba.me/images/jm.webp",
+        "telephone": "+243820066591",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Lubumbashi",
+            "addressCountry": "CD"
+        },
+        "worksFor": {
+            "@type": "Organization",
+            "name": "EJYISOFT",
+            "url": "https://ejyisoft.onrender.com"
+        },
+        "sameAs": [
+            "https://github.com/Jomusumba",
+            "https://www.linkedin.com/in/jonathan-musumba-451a2325b/",
+            "https://twitter.com/Jomusumba",
+            "https://www.youtube.com/@jojodev8"
+        ]
+    }
+    </script>
+    <!-- Structured Data: WebSite -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Jonathan Musumba — Portfolio",
+        "url": "https://jomusumba.me/",
+        "description": "Portfolio de Jonathan Musumba, développeur Python, Flutter & IA à Lubumbashi.",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://jomusumba.me/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <img src="images/jmus.jpg" alt="Photo de Jonathan Musumba" class="profile-pic">
-            <h1>Jonathan MUSUMBA</h1>
-            <p class="subtitle">Développeur Desktop (Python), Mobile (Flutter), Chatbot et IA (ML)</p>
-            <a href="CV_Jonathan_MUSUMBA.pdf" download class="cv-btn">Télécharger mon CV <i class="fas fa-download"></i></a>
-        </div>
-    </header>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <!-- Bouton Scroll to Top -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
-    <nav>
-        <button class="nav-toggle" aria-label="Ouvrir le menu">
-            <i class="fas fa-bars"></i>
-        </button>
-        <ul class="nav-menu">
-            <li><a href="#a-propos">À propos</a></li>
-            <li><a href="#experience">Expériences</a></li>
-            <li><a href="#formation">Formation</a></li>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#projets">Projets</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <!-- Navigation -->
+    <nav id="mainNav">
+        <div class="nav-container">
+            <a href="#" class="nav-brand">JM</a>
+            <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu nav-menu-desktop">
+                <li><a href="#hero"><i class="fas fa-house"></i> Accueil</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> A propos</a></li>
+                <li><a href="#services"><i class="fas fa-layer-group"></i> Services</a></li>
+                <li><a href="#stack"><i class="fas fa-cubes"></i> Stack</a></li>
+                <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projets</a></li>
+                <li><a href="#process"><i class="fas fa-route"></i> Process</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="labs.html"><i class="fas fa-flask"></i> Labs</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#cv" class="nav-cta"><i class="fas fa-file-pdf"></i> Voir CV</a>
+                <button id="themeToggle" class="theme-toggle" type="button" aria-label="Basculer le mode neon">
+                    <i class="fas fa-bolt"></i>
+                </button>
+            </div>
+        </div>
     </nav>
 
-    <main>
-        <section id="a-propos">
-            <h2><i class="fas fa-user"></i> À propos de moi</h2>
-            <div class="about-content">
-                <p class="about-intro">
-                    Je suis un développeur polyvalent et passionné, fondateur de <strong><a href="https://ejyisoft.onrender.com" target="_blank">EJYISOFT</a></strong>. Mon expertise se concentre sur la création de solutions innovantes et performantes.
+    <!-- Backdrop mobile (hors du nav pour éviter le stacking context de backdrop-filter) -->
+    <div class="nav-backdrop" aria-hidden="true"></div>
+    <!-- Drawer mobile -->
+    <div class="nav-drawer" aria-hidden="true">
+        <div class="nav-drawer-header">
+            <span class="nav-drawer-title">Navigation</span>
+            <button class="nav-close" aria-label="Fermer le menu"><i class="fas fa-xmark"></i></button>
+        </div>
+        <ul class="nav-menu nav-menu-mobile">
+            <li><a href="#hero"><i class="fas fa-house"></i> Accueil</a></li>
+            <li><a href="#about"><i class="fas fa-user"></i> A propos</a></li>
+            <li><a href="#services"><i class="fas fa-layer-group"></i> Services</a></li>
+            <li><a href="#stack"><i class="fas fa-cubes"></i> Stack</a></li>
+            <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projets</a></li>
+            <li><a href="#process"><i class="fas fa-route"></i> Process</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li><a href="labs.html"><i class="fas fa-flask"></i> Labs</a></li>
+        </ul>
+        <div class="nav-mobile-actions">
+            <a href="#cv" class="btn btn-primary"><i class="fas fa-file-pdf"></i> Voir CV</a>
+            <button class="theme-toggle" type="button" aria-label="Basculer le mode neon">
+                <i class="fas fa-bolt"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="images/jm.webp" alt="Jonathan Musumba" class="profile-pic" loading="eager" decoding="async">
+                <div class="hero-bg-circle"></div>
+            </div>
+            <div class="hero-text">
+                <h1 class="hero-title">Jonathan MUSUMBA</h1>
+                <div class="hero-subtitle">
+                    <span class="typing-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Développeur passionné et CEO d'<a href="https://ejyisoft.onrender.com" target="_blank" rel="noopener noreferrer" class="link-highlight">EJYISOFT</a>.
+                    Je transforme des idées innovantes en solutions technologiques performantes.
                 </p>
-                <ul class="about-highlights">
-                    <li><i class="fas fa-rocket"></i> CEO & Fondateur d'EJYISOFT</li>
-                    <li><i class="fas fa-code"></i> Spécialiste Python, Flutter & IA</li>
-                    <li><i class="fas fa-users"></i> Community Manager pour "Les Pépites de la RDC"</li>
-                </ul>
+                <div class="hero-badges">
+                    <span><i class="fab fa-python"></i> Python</span>
+                    <span><i class="fas fa-mobile-alt"></i> Flutter</span>
+                    <span><i class="fas fa-brain"></i> IA</span>
+                    <span><i class="fas fa-robot"></i> Chatbots</span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Me contacter
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <i class="fas fa-folder-open"></i> Mes projets
+                    </a>
+                    <a href="#cv" class="btn btn-ghost">
+                        <i class="fas fa-file-pdf"></i> Voir CV
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/Jomusumba" target="_blank" rel="noopener noreferrer" aria-label="Visitez mon profil GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jonathan-musumba-451a2325b/" target="_blank" rel="noopener noreferrer" aria-label="Visitez mon profil LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@jojodev8" target="_blank" rel="noopener noreferrer" aria-label="Visitez ma chaîne YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://twitter.com/Jomusumba" target="_blank" rel="noopener noreferrer" aria-label="Visitez mon profil Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
             </div>
-        </section>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about" aria-label="Défiler vers le bas">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
 
-        <section id="experience">
-            <h2><i class="fas fa-briefcase"></i> Expériences Professionnelles</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <img src="images/vodacoom.png" alt="Logo Vodacom" class="timeline-logo">
-                        <h3>Agent Walker</h3>
-                        <p class="timeline-company">Vodacom RDC</p>
-                        <p>Contribution à des projets sur le terrain, développant des compétences en communication et en service client.</p>
+    <main id="main-content">
+        <!-- Section Terminal -->
+        <section id="terminal" class="section terminal-section">
+            <div class="container">
+                <h2 class="section-title" data-text="Terminal">
+                    <i class="fas fa-terminal"></i> Mode Geek
+                </h2>
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="terminal-title">jonathan@portfolio:~</span>
                     </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <img src="images/cenirdc.png" alt="Logo CENI RDC" class="timeline-logo">
-                        <h3>Opérateur de Saisie</h3>
-                        <p class="timeline-company">CENI RDC</p>
-                        <p>Opérateur de saisie lors de l'enrôlement des électeurs, garantissant la précision des données critiques.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <img src="images/pepites.jpg" alt="Logo Les Pépites de la RDC" class="timeline-logo">
-                        <h3>Community Manager</h3>
-                        <p class="timeline-company">Les Pépites de la RDC (YouTube)</p>
-                        <p>Création et gestion de la communauté, incluant la stratégie de contenu et l'engagement des abonnés.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <img src="images/amnesty.jpg" alt="Logo Amnesty International" class="timeline-logo">
-                        <h3>Bénévole</h3>
-                        <p class="timeline-company">Amnesty International</p>
-                        <p>Engagement dans des actions de sensibilisation et de promotion des droits humains.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <img src="images/drhkat.png" alt="Logo DRHKAT" class="timeline-logo">
-                        <h3>Stagiaire Développeur</h3>
-                        <p class="timeline-company">DRHKAT</p>
-                        <p class="timeline-date">Stage Académique - BAC 1 Génie Logiciel</p>
-                        <p>Première immersion professionnelle où j'ai pu appliquer mes connaissances en développement.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <img src="images/habeb_energy.jpeg" alt="Logo HABEB ENERGY" class="timeline-logo">
-                        <h3>Stagiaire en Gestion</h3>
-                        <p class="timeline-company">HABEB ENERGY</p>
-                        <p class="timeline-date">Stage Académique - BAC 2</p>
-                        <p>Expérience pour développer des compétences en gestion et en organisation.</p>
-                    </div>
+                    <pre class="terminal-output" data-lines="whoami|Jonathan Musumba - Développeur Python/Flutter/IA|pwd|/home/jonathan/portfolio|cat mission.txt|Construire des solutions tech utiles, propres et humaines."> </pre>
                 </div>
             </div>
         </section>
 
-        <section id="formation">
-            <h2><i class="fas fa-graduation-cap"></i> Formation & Certificats</h2>
-            <div class="formation-grid">
-                <div class="formation-card">
-                    <i class="fas fa-university"></i>
-                    <h3>BAC +3 Génie Logiciel (en cours)</h3>
-                    <p>Université Protestante de Lubumbashi</p>
-                </div>
-                <div class="formation-card">
-                    <i class="fab fa-python"></i>
-                    <h3>Certificat Python</h3>
-                    <p>Udemy</p>
-                </div>
-                <div class="formation-card">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>Certificat "La tech c'est du concret"</h3>
-                    <p>Trace+</p>
-                </div>
-                <div class="formation-card">
-                    <i class="fas fa-database"></i>
-                    <h3>Certificat MySQL</h3>
-                    <p>Cursa</p>
-                </div>
-                <div class="formation-card">
-                    <i class="fas fa-file-word"></i>
-                    <h3>Certificat Microsoft Word</h3>
-                    <p>Cursa</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="competences">
-            <h2><i class="fas fa-cogs"></i> Mes Compétences</h2>
-            <div class="skills-container">
-                <div class="skill-card"><i class="fab fa-python"></i> Python</div>
-                <div class="skill-card"><i class="fas fa-mobile-alt"></i> Flutter</div>
-                <div class="skill-card"><i class="fas fa-robot"></i> Chatbots</div>
-                <div class="skill-card"><i class="fas fa-brain"></i> Machine Learning</div>
-                <div class="skill-card"><i class="fab fa-firebase"></i> Firebase</div>
-                <div class="skill-card"><i class="fas fa-database"></i> Supabase</div>
-                <div class="skill-card"><i class="fas fa-database"></i> MySQL</div>
-                <div class="skill-card"><i class="fas fa-database"></i> MongoDB</div>
-            </div>
-        </section>
-
-        <section id="projets">
-            <h2><i class="fas fa-project-diagram"></i> Mes Projets</h2>
-            <div class="projects-grid">
-                <!-- GSchool (Fraisscolaire) -->
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <img src="images/fraisscolaire.png" alt="Aperçu du logiciel GSchool" class="project-image">
+        <!-- Section À propos + Timeline -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title" data-text="À propos">
+                    <i class="fas fa-user"></i> À propos de moi
+                </h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p class="lead">
+                            Passionné de technologie depuis mon jeune âge, je me spécialise dans le développement
+                            <strong>Desktop (Python)</strong>, <strong>Mobile (Flutter)</strong> et <strong>l'Intelligence Artificielle</strong>.
+                        </p>
+                        <p>
+                            En tant que <strong>CEO et Fondateur d'EJYISOFT</strong>, je dirige une équipe dynamique
+                            dans la création de solutions innovantes. Mon expertise couvre aussi les <strong>chatbots intelligents</strong>
+                            et le <strong>Community Management</strong>.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat-card" data-count="10">
+                                <i class="fas fa-code"></i>
+                                <h3><span class="count">0</span>+</h3>
+                                <p>Projets réalisés</p>
+                            </div>
+                            <div class="stat-card" data-count="3">
+                                <i class="fas fa-briefcase"></i>
+                                <h3><span class="count">0</span></h3>
+                                <p>Années d'expérience</p>
+                            </div>
+                            <div class="stat-card" data-count="5">
+                                <i class="fas fa-certificate"></i>
+                                <h3><span class="count">0</span>+</h3>
+                                <p>Certifications</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="project-info">
-                        <h3>GSchool (Open-Source)</h3>
-                        <p>Logiciel de gestion des inscriptions et paiements pour écoles. Disponible sur mon GitHub.</p>
-                        <div class="project-tags"><span>Desktop</span><span>Python</span><span>Open-Source</span></div>
-                        <a href="https://github.com/jomusumba/GSchool" target="_blank" class="project-link">Voir sur GitHub <i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <!-- RDCDEAL -->
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <img src="images/rdcdeal.png" alt="Aperçu de l'application RDCDEAL" class="project-image">
-                    </div>
-                    <div class="project-info">
-                        <h3>RDCDEAL</h3>
-                        <p>Application mobile de ventes et trocs de biens et services.</p>
-                        <div class="project-tags"><span>Mobile</span><span>Flutter</span></div>
-                    </div>
-                </div>
-                <!-- Gendealers -->
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <img src="images/gendealers.png" alt="Aperçu du site Gendealers" class="project-image">
-                    </div>
-                    <div class="project-info">
-                        <h3>Site Gendealers</h3>
-                        <p>Participation à la création du site de vente de véhicules et matériels pour l'entreprise Gendealers.</p>
-                        <div class="project-tags"><span>Web</span><span>Collaboration</span></div>
-                    </div>
-                </div>
-                <!-- UPLBot -->
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <img src="images/uplbot.png" alt="Aperçu du chatbot UPLBot" class="project-image">
-                    </div>
-                    <div class="project-info">
-                        <h3>UPLBot</h3>
-                        <p>Chatbot intelligent pour l'Université Protestante de Lubumbashi.</p>
-                        <div class="project-tags"><span>Chatbot</span><span>IA</span></div>
-                    </div>
-                </div>
-                <!-- BETAI -->
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <img src="images/betai.png" alt="Aperçu de l'application BETAI" class="project-image">
-                    </div>
-                    <div class="project-info">
-                        <h3>BETAI (En cours)</h3>
-                        <p>Application mobile de prédiction de résultats de football basée sur l'IA.</p>
-                        <div class="project-tags"><span>Flutter</span><span>IA/ML</span></div>
-                    </div>
-                </div>
-                 <!-- Pépites -->
-                <div class="project-card">
-                    <div class="project-image-container">
-                        <img src="images/pepites.jpg" alt="Logo de la chaîne YouTube Les Pépites de la RDC" class="project-image">
-                    </div>
-                    <div class="project-info">
-                        <h3>Les Pépites de la RDC - Chaîne YouTube</h3>
-                        <p>Création et Community Management d'une chaîne YouTube.</p>
-                        <div class="project-tags"><span>Community Management</span><span>Stratégie</span></div>
+                    <div class="about-timeline">
+                        <h3 class="timeline-title">Timeline</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="timeline-date">2025 - Présent</span>
+                                <h4>CEO & Founder - EJYISOFT</h4>
+                                <p>Direction de produits tech et solutions IA.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">2023 - Présent</span>
+                                <h4>Community Manager - Les Pépites de la RDC</h4>
+                                <p>Stratégie de contenu et croissance communautaire.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-date">2022 - 2024</span>
+                                <h4>Developer Intern - DRHKAT</h4>
+                                <p>Stages académiques et développement de solutions.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact">
-            <h2><i class="fas fa-envelope"></i> Contactez-moi</h2>
-            <p>Une idée, un projet ? N'hésitez pas à me contacter.</p>
-            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="76daaa98-5ad0-49c1-9931-e8fb7f3f6005">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Votre Nom" required>
-                    <input type="email" name="email" placeholder="Votre Email" required>
+        <!-- Section Impact -->
+        <section id="impact" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title" data-text="Impact">
+                    <i class="fas fa-chart-line"></i> Impact & Résultats
+                </h2>
+                <div class="impact-grid">
+                    <div class="impact-card" data-count="10">
+                        <h3><span class="count">0</span>+</h3>
+                        <p>Projets livrés / en cours</p>
+                    </div>
+                    <div class="impact-card" data-count="6">
+                        <h3><span class="count">0</span>+</h3>
+                        <p>Domaines couverts (web, mobile, IA)</p>
+                    </div>
+                    <div class="impact-card" data-count="4">
+                        <h3><span class="count">0</span>+</h3>
+                        <p>Communautés animées</p>
+                    </div>
+                    <div class="impact-card" data-count="12">
+                        <h3><span class="count">0</span>+</h3>
+                        <p>Automations & scripts utiles</p>
+                    </div>
                 </div>
-                <textarea name="message" placeholder="Votre Message" required></textarea>
-                <button type="submit" class="contact-btn">Envoyer le Message</button>
-            </form>
+            </div>
+        </section>
+
+        <!-- Section Services -->
+        <section id="services" class="section">
+            <div class="container">
+                <h2 class="section-title" data-text="Services">
+                    <i class="fas fa-layer-group"></i> Services
+                </h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-desktop"></i>
+                        <h3>Dev Desktop</h3>
+                        <p>Applications Python stables, ergonomiques et sécurisées.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Dev Mobile</h3>
+                        <p>Apps Flutter modernes, performantes et multiplateformes.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-brain"></i>
+                        <h3>IA & ML</h3>
+                        <p>Modèles ML, analytics et solutions IA pratiques.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-robot"></i>
+                        <h3>Chatbots</h3>
+                        <p>Automatisation de la relation client et FAQ intelligente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Stack Graph -->
+        <section id="stack" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title" data-text="Stack">
+                    <i class="fas fa-cubes"></i> Stack Graph
+                </h2>
+                <div class="stack-grid">
+                    <div class="stack-card">
+                        <h3><i class="fab fa-python"></i> Backend Python</h3>
+                        <p>APIs, automation, data workflows.</p>
+                        <div class="stack-tags">
+                            <span>FastAPI</span><span>CustomTkinter</span><span>Pandas</span>
+                        </div>
+                    </div>
+                    <div class="stack-card">
+                        <h3><i class="fas fa-mobile-alt"></i> Flutter</h3>
+                        <p>UI/UX fluide et performances mobiles.</p>
+                        <div class="stack-tags">
+                            <span>Dart</span><span>Firebase</span><span>Supabase</span>
+                        </div>
+                    </div>
+                    <div class="stack-card">
+                        <h3><i class="fas fa-brain"></i> IA / ML</h3>
+                        <p>Modèles de prédiction et NLP.</p>
+                        <div class="stack-tags">
+                            <span>Scikit-learn</span><span>TensorFlow</span><span>OpenCV</span>
+                        </div>
+                    </div>
+                    <div class="stack-card">
+                        <h3><i class="fas fa-globe"></i> Web</h3>
+                        <p>Sites vitrines rapides et SEO-ready.</p>
+                        <div class="stack-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section CV -->
+        <section id="cv" class="section">
+            <div class="container">
+                <h2 class="section-title" data-text="CV">
+                    <i class="fas fa-file-pdf"></i> CV
+                </h2>
+                <div class="cv-card">
+                    <div>
+                        <h3>CV de Jonathan Musumba</h3>
+                        <p>Version courte, claire et orientée projets. PDF disponible et version web.</p>
+                    </div>
+                    <div class="cv-actions">
+                        <a href="cv.html" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-eye"></i> Voir le CV
+                        </a>
+                        <a href="cv.html" class="btn btn-primary" onclick="window.open('cv.html','_blank');setTimeout(()=>window.open('cv.html','_blank')?.print(),500);return false;">
+                            <i class="fas fa-download"></i> Exporter PDF
+                        </a>
+                        <a href="#contact" class="btn btn-ghost">
+                            <i class="fas fa-envelope"></i> Me contacter
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Expériences -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title" data-text="Expériences">
+                    <i class="fas fa-briefcase"></i> Expériences Professionnelles
+                </h2>
+                <div class="experience-grid">
+                    <div class="exp-card">
+                        <div class="exp-logo">
+                            <img src="images/ejyisoft.webp" alt="Logo de l'entreprise EJYISOFT, startup tech à Lubumbashi" loading="lazy" decoding="async">
+                        </div>
+                        <div class="exp-content">
+                            <h3>CEO & Fondateur</h3>
+                            <p class="exp-company"><i class="fas fa-building"></i> EJYISOFT</p>
+                            <p class="exp-date"><i class="far fa-calendar"></i> 2025 - Présent</p>
+                            <p class="exp-desc">
+                                Direction et gestion d'une entreprise de développement logiciel spécialisée en solutions
+                                Desktop, Mobile et IA.
+                            </p>
+                            <div class="exp-tags">
+                                <span>Leadership</span>
+                                <span>Gestion</span>
+                                <span>Développement</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="exp-card">
+                        <div class="exp-logo">
+                            <img src="images/pepites.webp" alt="Les Pépites de la RDC, chaîne YouTube" loading="lazy" decoding="async">
+                        </div>
+                        <div class="exp-content">
+                            <h3>Community Manager</h3>
+                            <p class="exp-company"><i class="fab fa-youtube"></i> Les Pépites de la RDC</p>
+                            <p class="exp-date"><i class="far fa-calendar"></i> 2023 - Présent</p>
+                            <p class="exp-desc">
+                                Création et gestion de la chaîne YouTube, stratégie de contenu et engagement communautaire.
+                            </p>
+                            <div class="exp-tags">
+                                <span>Social Media</span>
+                                <span>Contenu</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="exp-card">
+                        <div class="exp-logo exp-logo-icon">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <div class="exp-content">
+                            <h3>Community Manager</h3>
+                            <p class="exp-company"><i class="fab fa-youtube"></i> AFRO-SOUL LAB</p>
+                            <p class="exp-date"><i class="far fa-calendar"></i> 2024 - Présent</p>
+                            <p class="exp-desc">
+                                Branding, calendrier éditorial et modération communautaire.
+                            </p>
+                            <div class="exp-tags">
+                                <span>Branding</span>
+                                <span>Community</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="exp-card">
+                        <div class="exp-logo exp-logo-icon">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <div class="exp-content">
+                            <h3>Community Manager</h3>
+                            <p class="exp-company"><i class="fab fa-facebook"></i> SmartCode Community</p>
+                            <p class="exp-date"><i class="far fa-calendar"></i> 2025 - Présent</p>
+                            <p class="exp-desc">
+                                Animation de communauté tech et accompagnement des membres.
+                            </p>
+                            <div class="exp-tags">
+                                <span>Tech</span>
+                                <span>Mentorat</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="exp-card">
+                        <div class="exp-logo">
+                            <img src="images/habeb_energy.webp" alt="Logo HABEB ENERGY, station-service à Lubumbashi" loading="lazy" decoding="async">
+                        </div>
+                        <div class="exp-content">
+                            <h3>Stagiaire en Gestion</h3>
+                            <p class="exp-company"><i class="fas fa-gas-pump"></i> HABEB ENERGY</p>
+                            <p class="exp-date"><i class="far fa-calendar"></i> Stage BAC 2</p>
+                            <p class="exp-desc">
+                                Stage académique en gestion et organisation.
+                            </p>
+                            <div class="exp-tags">
+                                <span>Gestion</span>
+                                <span>Organisation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="exp-card">
+                        <div class="exp-logo">
+                            <img src="images/drhkat.webp" alt="Logo DRHKAT, entreprise tech à Lubumbashi" loading="lazy" decoding="async">
+                        </div>
+                        <div class="exp-content">
+                            <h3>Developer Intern</h3>
+                            <p class="exp-company"><i class="fas fa-code"></i> DRHKAT</p>
+                            <p class="exp-date"><i class="far fa-calendar"></i> Stage BAC 1 & BAC 3</p>
+                            <p class="exp-desc">
+                                Immersions professionnelles en développement logiciel.
+                            </p>
+                            <div class="exp-tags">
+                                <span>Développement</span>
+                                <span>Apprentissage</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="exp-card">
+                        <div class="exp-logo">
+                            <img src="images/vodacoom.webp" alt="Vodacom RDC" loading="lazy" decoding="async">
+                        </div>
+                        <div class="exp-content">
+                            <h3>Agent Terrain</h3>
+                            <p class="exp-company"><i class="fas fa-mobile-alt"></i> Vodacom RDC</p>
+                            <p class="exp-desc">
+                                Travail sur le terrain, communication et service client.
+                            </p>
+                            <div class="exp-tags">
+                                <span>Terrain</span>
+                                <span>Communication</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="exp-card">
+                        <div class="exp-logo">
+                            <img src="images/cenirdc.webp" alt="CENI RDC" loading="lazy" decoding="async">
+                        </div>
+                        <div class="exp-content">
+                            <h3>Opérateur de Saisie</h3>
+                            <p class="exp-company"><i class="fas fa-database"></i> CENI RDC</p>
+                            <p class="exp-desc">
+                                Enrôlement des électeurs et assurance qualité des données.
+                            </p>
+                            <div class="exp-tags">
+                                <span>Saisie de données</span>
+                                <span>Précision</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="exp-card">
+                        <div class="exp-logo">
+                            <img src="images/amnesty.webp" alt="Amnesty International" loading="lazy" decoding="async">
+                        </div>
+                        <div class="exp-content">
+                            <h3>Bénévole</h3>
+                            <p class="exp-company"><i class="fas fa-hands-helping"></i> Amnesty International</p>
+                            <p class="exp-desc">
+                                Engagement dans des actions de sensibilisation aux droits humains.
+                            </p>
+                            <div class="exp-tags">
+                                <span>Humanitaire</span>
+                                <span>Sensibilisation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Formation -->
+        <section id="formation" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title" data-text="Formation">
+                    <i class="fas fa-graduation-cap"></i> Formation & Certifications
+                </h2>
+                <div class="formation-grid">
+                    <div class="formation-card">
+                        <div class="formation-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3>BAC +3 Génie Logiciel</h3>
+                        <p class="formation-school">Université Protestante de Lubumbashi</p>
+                        <p class="formation-status">En cours</p>
+                    </div>
+                    <div class="formation-card">
+                        <div class="formation-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3>Certificat Python</h3>
+                        <p class="formation-school">Udemy</p>
+                    </div>
+                    <div class="formation-card">
+                        <div class="formation-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>La tech c'est du concret</h3>
+                        <p class="formation-school">Trace+</p>
+                    </div>
+                    <div class="formation-card">
+                        <div class="formation-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Certificat MySQL</h3>
+                        <p class="formation-school">Cursa</p>
+                    </div>
+                    <div class="formation-card">
+                        <div class="formation-icon">
+                            <i class="fas fa-file-word"></i>
+                        </div>
+                        <h3>Certificat Microsoft Word</h3>
+                        <p class="formation-school">Cursa</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Compétences -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title" data-text="Compétences">
+                    <i class="fas fa-cogs"></i> Mes Compétences
+                </h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3>Python</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Flutter</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Machine Learning</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Chatbots</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-firebase"></i>
+                        </div>
+                        <h3>Firebase</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Supabase</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>MySQL</h3>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>MongoDB</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Projets -->
+        <section id="projects" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title" data-text="Projets">
+                    <i class="fas fa-project-diagram"></i> Mes Projets
+                </h2>
+                <p class="section-note">Statut : projets logiciels en prototype ou en cours (pas en production).</p>
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">Tous</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="desktop">Desktop</button>
+                    <button class="filter-btn" data-filter="ia">IA</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="community">Community</button>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-category="mobile ia">
+                        <div class="project-image">
+                            <img src="images/betai.webp" alt="BETAI — Application mobile de prédiction de football par IA" loading="lazy" decoding="async">
+                            <div class="project-overlay">
+                                <span class="project-status">En cours</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-badges">
+                                <span class="badge">IA</span>
+                                <span class="badge">Mobile</span>
+                                <span class="badge">En cours</span>
+                            </div>
+                            <h3>BETAI</h3>
+                            <p>Application mobile de prédiction de résultats de football basée sur l'IA.</p>
+                            <div class="project-meta">
+                                <p><strong>Problème :</strong> Manque d'outils fiables pour analyser les matchs.</p>
+                                <p><strong>Solution :</strong> Modèles ML pour prédire les tendances.</p>
+                                <p><strong>Impact :</strong> Aide à la prise de décision sportive.</p>
+                            </div>
+                            <div class="project-tech">
+                                <span><i class="fas fa-mobile-alt"></i> Flutter</span>
+                                <span><i class="fas fa-brain"></i> IA/ML</span>
+                                <span><i class="fab fa-python"></i> Python</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="desktop">
+                        <div class="project-image">
+                            <img src="images/fraisscolaire.webp" alt="GSchool — Logiciel de gestion scolaire open-source" loading="lazy" decoding="async">
+                            <div class="project-overlay">
+                                <a href="https://github.com/jomusumba/GSchool" target="_blank" class="project-link" rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i> Voir sur GitHub
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-badges">
+                                <span class="badge">Open Source</span>
+                                <span class="badge">Desktop</span>
+                            </div>
+                            <h3>GSchool</h3>
+                            <p>Logiciel open-source de gestion des inscriptions et paiements pour écoles.</p>
+                            <div class="project-meta">
+                                <p><strong>Problème :</strong> Suivi manuel des paiements scolaires.</p>
+                                <p><strong>Solution :</strong> Automatisation des inscriptions et encaissements.</p>
+                                <p><strong>Impact :</strong> Gain de temps administratif.</p>
+                            </div>
+                            <div class="project-tech">
+                                <span><i class="fas fa-desktop"></i> Desktop</span>
+                                <span><i class="fab fa-python"></i> Python</span>
+                                <span><i class="fas fa-code-branch"></i> Open-Source</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="mobile">
+                        <div class="project-image">
+                            <img src="images/rdcdeal.webp" alt="RDCDEAL — Marketplace mobile de ventes et trocs en RDC" loading="lazy" decoding="async">
+                            <div class="project-overlay">
+                                <span class="project-status">Prototype</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-badges">
+                                <span class="badge">Marketplace</span>
+                                <span class="badge">Mobile</span>
+                                <span class="badge">Prototype</span>
+                            </div>
+                            <h3>RDCDEAL</h3>
+                            <p>Application mobile de ventes et trocs de biens et services en RDC.</p>
+                            <div class="project-meta">
+                                <p><strong>Problème :</strong> Difficultés d'achat/vente entre particuliers.</p>
+                                <p><strong>Solution :</strong> Plateforme P2P avec profils et filtres.</p>
+                                <p><strong>Impact :</strong> Connexions rapides entre vendeurs et acheteurs.</p>
+                            </div>
+                            <div class="project-tech">
+                                <span><i class="fas fa-mobile-alt"></i> Flutter</span>
+                                <span><i class="fab fa-firebase"></i> Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="ia">
+                        <div class="project-image">
+                            <img src="images/uplbot.webp" alt="UPLBot — Chatbot IA pour l'Université Protestante de Lubumbashi" loading="lazy" decoding="async">
+                            <div class="project-overlay">
+                                <span class="project-status">Prototype</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-badges">
+                                <span class="badge">Chatbot</span>
+                                <span class="badge">IA</span>
+                                <span class="badge">Prototype</span>
+                            </div>
+                            <h3>UPLBot</h3>
+                            <p>Chatbot intelligent pour l'Université Protestante de Lubumbashi.</p>
+                            <div class="project-meta">
+                                <p><strong>Problème :</strong> Questions récurrentes des étudiants.</p>
+                                <p><strong>Solution :</strong> Réponses automatisées via NLP.</p>
+                                <p><strong>Impact :</strong> Support rapide 24/7.</p>
+                            </div>
+                            <div class="project-tech">
+                                <span><i class="fas fa-robot"></i> Chatbot</span>
+                                <span><i class="fab fa-python"></i> Python</span>
+                                <span><i class="fas fa-brain"></i> IA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="images/gendealers.webp" alt="Gendealers — Site vitrine de vente de véhicules" loading="lazy" decoding="async">
+                            <div class="project-overlay">
+                                <span class="project-status">Prototype</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-badges">
+                                <span class="badge">Web</span>
+                                <span class="badge">Business</span>
+                                <span class="badge">Prototype</span>
+                            </div>
+                            <h3>Site Gendealers</h3>
+                            <p>Site web pour une entreprise de vente de véhicules à Lubumbashi.</p>
+                            <div class="project-meta">
+                                <p><strong>Problème :</strong> Manque de visibilité en ligne.</p>
+                                <p><strong>Solution :</strong> Site vitrine rapide et responsive.</p>
+                                <p><strong>Impact :</strong> Présentation claire des offres.</p>
+                            </div>
+                            <div class="project-tech">
+                                <span><i class="fas fa-globe"></i> Web</span>
+                                <span><i class="fas fa-code"></i> HTML/CSS/JS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="community">
+                        <div class="project-image">
+                            <img src="images/pepites.webp" alt="Les Pépites de la RDC — Chaîne YouTube de talents congolais" loading="lazy" decoding="async">
+                            <div class="project-overlay">
+                                <span class="project-status">Actif</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-badges">
+                                <span class="badge">YouTube</span>
+                                <span class="badge">Community</span>
+                            </div>
+                            <h3>Les Pépites de la RDC</h3>
+                            <p>Création et gestion d'une chaîne YouTube de talents congolais.</p>
+                            <div class="project-meta">
+                                <p><strong>Problème :</strong> Visibilité des talents locaux.</p>
+                                <p><strong>Solution :</strong> Stratégie de contenu et calendrier régulier.</p>
+                                <p><strong>Impact :</strong> Croissance organique de la communauté.</p>
+                            </div>
+                            <div class="project-tech">
+                                <span><i class="fab fa-youtube"></i> YouTube</span>
+                                <span><i class="fas fa-users"></i> Community Management</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="images/ejyisoft.webp" alt="EJYISOFT — Site web professionnel de l'entreprise tech" loading="lazy" decoding="async">
+                            <div class="project-overlay">
+                                <a href="https://ejyisoft.onrender.com" target="_blank" class="project-link" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt"></i> Visiter le site
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-badges">
+                                <span class="badge">Business</span>
+                                <span class="badge">Web</span>
+                            </div>
+                            <h3>Site EJYISOFT</h3>
+                            <p>Site web professionnel de mon entreprise EJYISOFT.</p>
+                            <div class="project-meta">
+                                <p><strong>Problème :</strong> Présence web officielle.</p>
+                                <p><strong>Solution :</strong> Vitrine moderne et rassurante.</p>
+                                <p><strong>Impact :</strong> Amélioration de la crédibilité.</p>
+                            </div>
+                            <div class="project-tech">
+                                <span><i class="fas fa-globe"></i> Web</span>
+                                <span><i class="fas fa-rocket"></i> Business</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="images/jm.webp" alt="Portfolio de Jonathan Musumba — Site personnel" loading="lazy" decoding="async">
+                            <div class="project-overlay">
+                                <span class="project-status">Live</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-badges">
+                                <span class="badge">Portfolio</span>
+                                <span class="badge">SEO</span>
+                            </div>
+                            <h3>Mon Portfolio</h3>
+                            <p>Portfolio moderne et responsive avec animations.</p>
+                            <div class="project-meta">
+                                <p><strong>Problème :</strong> Manque de présence professionnelle claire.</p>
+                                <p><strong>Solution :</strong> Site rapide, visuel et structuré SEO.</p>
+                                <p><strong>Impact :</strong> Image pro et acquisition de contacts.</p>
+                            </div>
+                            <div class="project-tech">
+                                <span><i class="fas fa-code"></i> HTML/CSS/JS</span>
+                                <span><i class="fas fa-mobile-alt"></i> Responsive</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Études de cas -->
+        <section id="case-studies" class="section" role="region">
+            <div class="container">
+                <h2 class="section-title" data-text="Études de cas">
+                    <i class="fas fa-flask"></i> Études de cas
+                </h2>
+                <div class="case-grid">
+                    <article class="case-card">
+                        <div class="case-badges">
+                            <span class="badge">IA</span>
+                            <span class="badge">Chatbot</span>
+                        </div>
+                        <h3>UPLBot - Support étudiant 24/7</h3>
+                        <p><strong>Contexte :</strong> Beaucoup de questions répétitives des étudiants.</p>
+                        <p><strong>Rôle :</strong> Conception, NLP, déploiement.</p>
+                        <p><strong>Actions :</strong> Construction des intents, base de connaissances, tests.</p>
+                        <p><strong>Résultats :</strong> Réponses plus rapides et disponibilité continue.</p>
+                        <div class="case-tags">
+                            <span><i class="fab fa-python"></i> Python</span>
+                            <span><i class="fas fa-brain"></i> NLP</span>
+                            <span><i class="fas fa-robot"></i> Chatbot</span>
+                        </div>
+                    </article>
+                    <article class="case-card">
+                        <div class="case-badges">
+                            <span class="badge">Desktop</span>
+                            <span class="badge">Open Source</span>
+                        </div>
+                        <h3>GSchool - Gestion scolaire simplifiée</h3>
+                        <p><strong>Contexte :</strong> Suivi manuel des inscriptions et paiements.</p>
+                        <p><strong>Rôle :</strong> Dev desktop, modélisation données.</p>
+                        <p><strong>Actions :</strong> Modules paiements, inscriptions, rapports.</p>
+                        <p><strong>Résultats :</strong> Gain de temps administratif notable.</p>
+                        <div class="case-tags">
+                            <span><i class="fab fa-python"></i> Python</span>
+                            <span><i class="fas fa-database"></i> MySQL</span>
+                            <span><i class="fas fa-desktop"></i> Desktop</span>
+                        </div>
+                    </article>
+                    <article class="case-card">
+                        <div class="case-badges">
+                            <span class="badge">Mobile</span>
+                            <span class="badge">Marketplace</span>
+                        </div>
+                        <h3>RDCDEAL - Marketplace locale</h3>
+                        <p><strong>Contexte :</strong> Mise en relation difficile entre vendeurs/acheteurs.</p>
+                        <p><strong>Rôle :</strong> Dev mobile, UX, back-end.</p>
+                        <p><strong>Actions :</strong> Listings, filtres, profils, modération.</p>
+                        <p><strong>Résultats :</strong> Parcours d'achat plus fluide.</p>
+                        <div class="case-tags">
+                            <span><i class="fas fa-mobile-alt"></i> Flutter</span>
+                            <span><i class="fab fa-firebase"></i> Firebase</span>
+                            <span><i class="fas fa-layer-group"></i> Marketplace</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Process -->
+        <section id="process" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title" data-text="Process">
+                    <i class="fas fa-route"></i> Mon Processus
+                </h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <span class="step-number">1</span>
+                        <h3>Analyse</h3>
+                        <p>Comprendre le besoin et le contexte.</p>
+                    </div>
+                    <div class="process-step">
+                        <span class="step-number">2</span>
+                        <h3>Conception</h3>
+                        <p>UX, architecture et priorités produit.</p>
+                    </div>
+                    <div class="process-step">
+                        <span class="step-number">3</span>
+                        <h3>Développement</h3>
+                        <p>Implémentation propre, tests et itérations.</p>
+                    </div>
+                    <div class="process-step">
+                        <span class="step-number">4</span>
+                        <h3>Livraison</h3>
+                        <p>Déploiement, formation et maintenance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section FAQ -->
+        <section id="faq" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title" data-text="FAQ">
+                    <i class="fas fa-circle-question"></i> FAQ
+                </h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-1">
+                            <span class="faq-icon"><i class="fas fa-layer-group"></i></span>
+                            <span class="faq-text">Quels types de projets réalises-tu ?</span>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-1">
+                            Apps desktop, mobile, IA, chatbots et sites vitrines optimisés SEO.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-2">
+                            <span class="faq-icon"><i class="fas fa-clock"></i></span>
+                            <span class="faq-text">Quels sont les délais moyens ?</span>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-2">
+                            Cela dépend du scope, mais je propose toujours un planning clair et réaliste.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-3">
+                            <span class="faq-icon"><i class="fas fa-screwdriver-wrench"></i></span>
+                            <span class="faq-text">Est-ce que tu assures la maintenance ?</span>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-3">
+                            Oui, support et maintenance sont possibles selon le besoin.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-4">
+                            <span class="faq-icon"><i class="fas fa-play"></i></span>
+                            <span class="faq-text">Comment démarrer un projet ?</span>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-4">
+                            Contacte-moi via le formulaire, je réponds rapidement avec une proposition.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-5">
+                            <span class="faq-icon"><i class="fas fa-globe"></i></span>
+                            <span class="faq-text">Est-ce que tu peux travailler à distance ?</span>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-5">
+                            Oui, je travaille à distance avec suivi, points hebdo et livrables clairs.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-6">
+                            <span class="faq-icon"><i class="fas fa-file-signature"></i></span>
+                            <span class="faq-text">Fournis-tu un devis et un cahier des charges ?</span>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-6">
+                            Oui, je propose un devis détaillé et un plan d'exécution avant démarrage.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-7">
+                            <span class="faq-icon"><i class="fas fa-wand-magic-sparkles"></i></span>
+                            <span class="faq-text">Peux-tu reprendre ou optimiser un projet existant ?</span>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-7">
+                            Oui, audit, optimisations performance/UX et évolution progressive du produit.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-8">
+                            <span class="faq-icon"><i class="fas fa-diagram-project"></i></span>
+                            <span class="faq-text">Quels outils utilises-tu pour le suivi ?</span>
+                        </button>
+                        <div class="faq-answer" id="faq-answer-8">
+                            Trello/Notion, GitHub et un canal direct pour les retours rapides.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title" data-text="Contact">
+                    <i class="fas fa-envelope"></i> Contactez-moi
+                </h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-building"></i>
+                            <div>
+                                <h3>Entreprise</h3>
+                                <p><a href="https://ejyisoft.onrender.com" target="_blank" rel="noopener noreferrer">EJYISOFT</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p><a href="mailto:jonathanmusumba8@gmail.com">jonathanmusumba8@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Téléphone</h3>
+                                <p><a href="tel:+243820066591">+243 820 066 591</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Localisation</h3>
+                                <p>Lubumbashi, RD Congo</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-share-alt"></i>
+                            <div>
+                                <h3>Réseaux sociaux</h3>
+                                <p>@jomusumba</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-link"></i>
+                            <div>
+                                <h3>Liens rapides</h3>
+                                <p><a href="labs.html">Labs</a> · <a href="#projects">Projets</a> · <a href="#cv">CV</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <input type="hidden" name="access_key" value="4a3b8d9f-4d5e-4f6a-8c7b-9e2d1c0a4b5c">
+                    <input type="hidden" name="subject" value="Nouveau message depuis votre Portfolio">
+                    <input type="hidden" name="from_name" value="Portfolio Jomusumba">
+                    <!-- Honeypot anti-spam -->
+                    <input type="text" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off">
+
+                    <div id="form-result"></div>
+
+                    <div class="form-group">
+                            <label for="contact-name" class="sr-only">Votre Nom</label>
+                            <input type="text" id="contact-name" name="name" placeholder="Votre Nom *" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email" class="sr-only">Votre Email</label>
+                            <input type="email" id="contact-email" name="email" placeholder="Votre Email *" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject" class="sr-only">Sujet</label>
+                            <input type="text" id="contact-subject" name="subject" placeholder="Sujet">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message" class="sr-only">Votre Message</label>
+                            <textarea id="contact-message" name="message" placeholder="Votre Message *" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i> Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <div class="social-links">
-            <a href="https://github.com/jomusumba" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/jomusumba" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/jomusumba" target="_blank" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.facebook.com/jomusumba" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com/jomusumba" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.tiktok.com/@jomusumba" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+    <!-- Section Témoignages -->
+    <section id="testimonials" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title" data-text="Témoignages">
+                <i class="fas fa-quote-left"></i> Témoignages
+            </h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "Jonathan gère notre chaîne YouTube avec rigueur et créativité. Sa stratégie de contenu a permis une croissance organique remarquable de notre communauté. Un vrai professionnel."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-author-icon"><i class="fab fa-youtube"></i></div>
+                        <div class="testimonial-author-info">
+                            <h4>Les Pépites de la RDC</h4>
+                            <p>Chaîne YouTube</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "EJYISOFT nous a livré un logiciel de gestion scolaire fiable et facile à prendre en main. Le suivi et la maintenance sont excellents."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-author-icon"><i class="fas fa-school"></i></div>
+                        <div class="testimonial-author-info">
+                            <h4>Utilisateur GSchool</h4>
+                            <p>École partenaire</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p>&copy; 2025 - Jonathan MUSUMBA</p>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>Prêt à démarrer votre projet ?</h2>
+        <p>Discutons de votre idée et transformons-la en réalité.</p>
+        <a href="#contact" class="btn btn-primary">
+            <i class="fas fa-rocket"></i> Lancez votre projet
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Jonathan Musumba</h3>
+                    <p>Développeur Python, Flutter & IA. CEO d'EJYISOFT.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <a href="#about">À propos</a>
+                    <a href="#services">Services</a>
+                    <a href="#projects">Projets</a>
+                    <a href="#contact">Contact</a>
+                    <a href="labs.html">Labs</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact rapide</h4>
+                    <p>Lubumbashi, RD Congo</p>
+                    <a href="mailto:jonathanmusumba8@gmail.com">jonathanmusumba8@gmail.com</a>
+                    <a href="tel:+243820066591">+243 820 066 591</a>
+                    <a href="#contact">Formulaire de contact</a>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/jomusumba" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/jomusumba" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/jomusumba" target="_blank" rel="noopener noreferrer" aria-label="X">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com/jomusumba" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/jomusumba" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@jomusumba" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.threads.net/@jomusumba" target="_blank" rel="noopener noreferrer" aria-label="Threads">
+                    <i class="fa-brands fa-threads"></i>
+                </a>
+            </div>
+            <p class="footer-text">
+                &copy; <span id="current-year"></span> - Jonathan MUSUMBA | Fait avec <i class="fas fa-heart"></i> et <i class="fas fa-code"></i>
+            </p>
+        </div>
     </footer>
 
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/243820066591" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contactez-moi sur WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp</span>
+    </a>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast" aria-live="polite"></div>
+
     <script src="script.js"></script>
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "vqe725u2z9");
+    </script>
+
+    <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2026/03/04/11/20260304114222-X85O6J59.js" defer></script>
+
 </body>
 </html>

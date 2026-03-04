@@ -1,0 +1,274 @@
+Qui est Jonathan Musumba ?
+
+Jonathan Musumba, aussi connu sous le nom JO MUSUMBA, est un développeur passionné spécialisé en Python, Flutter et Intelligence Artificielle. Il est le CEO et Fondateur d'EJYISOFT, une entreprise de développement logiciel basée à Lubumbashi, en République Démocratique du Congo (RDC).
+
+Il transforme des idées innovantes en solutions technologiques performantes. Son expertise couvre les applications desktop, les applications mobiles, l'IA/Machine Learning, les chatbots intelligents et le community management.
+
+Site web : https://jomusumba.me
+
+
+---
+
+EJYISOFT
+
+EJYISOFT est l'entreprise fondée et dirigée par Jonathan Musumba en 2025. C'est une startup tech basée à Lubumbashi spécialisée dans :
+- Le développement d'applications Desktop (Python)
+- Le développement d'applications Mobile (Flutter)
+- Les solutions d'Intelligence Artificielle
+- La création de chatbots intelligents
+
+Site web EJYISOFT : https://ejyisoft.onrender.com
+
+
+---
+
+Informations de contact
+
+- Email : jonathanmusumba8@gmail.com
+- Téléphone / WhatsApp : +243 820 066 591
+- Localisation : Lubumbashi, RD Congo
+- Formulaire de contact : https://jomusumba.me/#contact
+
+Réseaux sociaux :
+- GitHub : https://github.com/Jomusumba
+- LinkedIn : https://www.linkedin.com/in/jonathan-musumba-451a2325b/
+- YouTube : https://www.youtube.com/@jojodev8
+- Twitter/X : https://twitter.com/Jomusumba
+- Facebook : https://www.facebook.com/jomusumba
+- Instagram : https://www.instagram.com/jomusumba
+- TikTok : https://www.tiktok.com/@jomusumba
+- Threads : https://www.threads.net/@jomusumba
+
+
+---
+
+Services proposés
+
+Jonathan propose 4 types de services principaux :
+
+1. Développement Desktop (Python)
+Applications Python stables, ergonomiques et sécurisées. Utilisation de frameworks comme CustomTkinter, FastAPI et Pandas.
+
+2. Développement Mobile (Flutter)
+Applications mobiles modernes, performantes et multiplateformes (Android & iOS) avec Flutter/Dart, Firebase et Supabase.
+
+3. Intelligence Artificielle & Machine Learning
+Modèles de Machine Learning, analytics, solutions IA pratiques. Technologies : Scikit-learn, TensorFlow, OpenCV, NLP.
+
+4. Chatbots intelligents
+Automatisation de la relation client, FAQ intelligente, chatbots conversationnels.
+
+
+---
+
+Stack technique
+
+Backend & Desktop : Python, FastAPI, CustomTkinter, Pandas
+Mobile : Flutter, Dart, Firebase, Supabase
+IA / ML : Scikit-learn, TensorFlow, NLP, OpenCV
+Web & Outils : HTML, CSS, JavaScript, MySQL, MongoDB, Git
+
+
+---
+
+Projets
+
+Note : La plupart des projets sont en prototype ou en cours de développement, pas en production.
+
+BETAI
+- Type : Application mobile + IA
+- Description : Application mobile de prédiction de résultats de football basée sur l'Intelligence Artificielle.
+- Problème résolu : Manque d'outils fiables pour analyser les matchs.
+- Solution : Modèles ML pour prédire les tendances sportives.
+- Technologies : Flutter, Python, IA/ML
+- Statut : En cours
+
+GSchool
+- Type : Application Desktop
+- Description : Logiciel open-source de gestion des inscriptions et paiements pour écoles.
+- Problème résolu : Suivi manuel des paiements scolaires.
+- Solution : Automatisation des inscriptions et encaissements.
+- Technologies : Python, MySQL, Desktop
+- Statut : Disponible sur GitHub
+- Lien : https://github.com/jomusumba/GSchool
+
+RDCDEAL
+- Type : Application mobile
+- Description : Application mobile de ventes et trocs de biens et services en RDC.
+- Problème résolu : Difficultés d'achat/vente entre particuliers.
+- Solution : Plateforme P2P avec profils et filtres.
+- Technologies : Flutter, Firebase
+- Statut : Prototype
+
+UPLBot
+- Type : Chatbot IA
+- Description : Chatbot intelligent pour l'Université Protestante de Lubumbashi.
+- Problème résolu : Questions récurrentes des étudiants.
+- Solution : Réponses automatisées via NLP.
+- Technologies : Python, NLP, Chatbot
+- Statut : Prototype
+
+Site Gendealers
+- Type : Site web
+- Description : Site web pour une entreprise de vente de véhicules à Lubumbashi.
+- Problème résolu : Manque de visibilité en ligne.
+- Solution : Site vitrine rapide et responsive.
+- Technologies : HTML/CSS/JS
+- Statut : Prototype
+
+Les Pépites de la RDC
+- Type : Chaîne YouTube / Community
+- Description : Création et gestion d'une chaîne YouTube de talents congolais.
+- Problème résolu : Visibilité des talents locaux en RDC.
+- Solution : Stratégie de contenu et calendrier régulier.
+- Technologies : YouTube, Community Management
+- Statut : Actif
+
+Site EJYISOFT
+- Type : Site web
+- Description : Site web professionnel de l'entreprise EJYISOFT.
+- Solution : Vitrine moderne et rassurante pour les clients.
+- Lien : https://ejyisoft.onrender.com
+- Statut : En ligne
+
+Portfolio jomusumba.me
+- Type : Site web
+- Description : Portfolio moderne et responsive avec animations, SEO optimisé.
+- Lien : https://jomusumba.me
+- Statut : En ligne
+
+
+---
+
+Expériences professionnelles
+
+CEO & Fondateur — EJYISOFT (2025 - Présent)
+Direction et gestion d'une entreprise de développement logiciel spécialisée en solutions Desktop, Mobile et IA.
+
+Community Manager — Les Pépites de la RDC (2023 - Présent)
+Création et gestion de la chaîne YouTube. Stratégie de contenu et croissance communautaire.
+
+Community Manager — AFRO-SOUL LAB (2024 - Présent)
+Branding, calendrier éditorial et modération communautaire sur YouTube.
+
+Community Manager — SmartCode Community (2025 - Présent)
+Animation de communauté tech et accompagnement des membres sur Facebook.
+
+Stagiaire en Gestion — HABEB ENERGY (Stage BAC 2)
+Stage académique en gestion et organisation dans une station-service à Lubumbashi.
+
+Developer Intern — DRHKAT (Stage BAC 1 & BAC 3)
+Immersions professionnelles en développement logiciel.
+
+Agent Terrain — Vodacom RDC
+Travail sur le terrain, communication et service client.
+
+Opérateur de Saisie — CENI RDC
+Enrôlement des électeurs et assurance qualité des données.
+
+Bénévole — Amnesty International
+Engagement dans des actions de sensibilisation aux droits humains.
+
+
+---
+
+Formation & Certifications
+
+- BAC +3 Génie Logiciel — Université Protestante de Lubumbashi (en cours)
+- Certificat Python — Udemy
+- La tech c'est du concret — Trace+
+- Certificat MySQL — Cursa
+- Certificat Microsoft Word — Cursa
+
+
+---
+
+Langues
+
+- Français : Courant
+- Swahili : Courant
+- Anglais : Intermédiaire
+
+
+---
+
+Processus de travail
+
+Jonathan suit un processus en 4 étapes pour chaque projet :
+
+1. Analyse — Comprendre le besoin et le contexte du client
+2. Conception — UX, architecture technique et priorités produit
+3. Développement — Implémentation propre, tests et itérations
+4. Livraison — Déploiement, formation du client et maintenance
+
+
+---
+
+FAQ (Questions fréquentes)
+
+Quels types de projets réalises-tu ?
+Apps desktop, mobile, IA, chatbots et sites vitrines optimisés SEO.
+
+Quels sont les délais moyens ?
+Cela dépend du scope, mais Jonathan propose toujours un planning clair et réaliste.
+
+Est-ce que tu assures la maintenance ?
+Oui, support et maintenance sont possibles selon le besoin.
+
+Comment démarrer un projet ?
+Contacte Jonathan via le formulaire du site (jomusumba.me/#contact), il répond rapidement avec une proposition.
+
+Est-ce que tu peux travailler à distance ?
+Oui, Jonathan travaille à distance avec suivi, points hebdo et livrables clairs.
+
+Fournis-tu un devis et un cahier des charges ?
+Oui, Jonathan propose un devis détaillé et un plan d'exécution avant tout démarrage.
+
+Peux-tu reprendre ou optimiser un projet existant ?
+Oui : audit, optimisations performance/UX et évolution progressive du produit.
+
+Quels outils utilises-tu pour le suivi ?
+Trello/Notion, GitHub et un canal direct pour les retours rapides.
+
+
+---
+
+Chiffres clés
+
+- 10+ projets livrés ou en cours
+- 6+ domaines couverts (web, mobile, IA, desktop, chatbots, community)
+- 4+ communautés animées
+- 12+ automations et scripts utiles créés
+- 3 années d'expérience
+- 5+ certifications
+
+
+---
+
+CV
+
+Le CV de Jonathan est disponible en version web sur le site :
+- Voir le CV : https://jomusumba.me/cv.html
+- Exporter en PDF : Depuis la page CV, cliquer sur "Exporter PDF" (impression navigateur)
+
+Il n'y a pas de fichier PDF pré-généré, le CV est créé directement depuis le site web.
+
+
+---
+
+Liens rapides
+
+Portfolio (accueil) : https://jomusumba.me
+CV : https://jomusumba.me/cv.html
+Labs (expériences) : https://jomusumba.me/labs.html
+EJYISOFT : https://ejyisoft.onrender.com
+GitHub : https://github.com/Jomusumba
+GSchool (GitHub) : https://github.com/jomusumba/GSchool
+
+
+---
+
+Centres d'intérêt
+
+Intelligence Artificielle, Open Source, Automatisation, Community Building, Droits humains (bénévole Amnesty International).
+

@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV de Jonathan Musumba — Développeur Python, Flutter & IA, CEO d'EJYISOFT à Lubumbashi.">
+    <meta name="theme-color" content="#00aaff">
+    <title>CV | Jonathan Musumba — Développeur Python, Flutter & IA</title>
+    <link rel="icon" type="image/webp" href="images/ejyisoft.webp">
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;600&display=swap"></noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <style>
+        /* ===== CV DEDICATED STYLES ===== */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --cv-accent: #00aaff;
+            --cv-accent-dark: #0088cc;
+            --cv-bg: #0e0e0e;
+            --cv-page: #141414;
+            --cv-card: #1c1c1c;
+            --cv-border: #2a2a2a;
+            --cv-text: #f0f0f0;
+            --cv-text-sec: #b0b0b0;
+            --cv-text-muted: #888;
+            --cv-sidebar-bg: #111;
+        }
+
+        html { font-size: 15px; }
+
+        body {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--cv-bg);
+            color: var(--cv-text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ===== TOP BAR (screen only) ===== */
+        .cv-topbar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.6rem 1.5rem;
+            background: rgba(14, 14, 14, 0.92);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--cv-border);
+        }
+
+        .cv-topbar-brand {
+            color: var(--cv-accent);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: opacity 0.2s;
+        }
+        .cv-topbar-brand:hover { opacity: 0.75; }
+
+        .cv-topbar-actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .btn-sm {
+            padding: 0.45rem 1rem;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 0.82rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            text-decoration: none;
+            transition: all 0.25s ease;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        .btn-sm.btn-primary {
+            background: var(--cv-accent);
+            color: #000;
+        }
+        .btn-sm.btn-primary:hover { background: var(--cv-accent-dark); }
+
+        .btn-sm.btn-secondary {
+            background: transparent;
+            color: var(--cv-accent);
+            border: 1.5px solid var(--cv-accent);
+        }
+        .btn-sm.btn-secondary:hover {
+            background: var(--cv-accent);
+            color: #000;
+        }
+
+        /* ===== CV PAGE ===== */
+        .cv-page {
+            max-width: 960px;
+            margin: 1.5rem auto;
+            background: var(--cv-page);
+            border: 1px solid var(--cv-border);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+        }
+
+        /* ===== CV HEADER ===== */
+        .cv-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            padding: 2.5rem 2.5rem 2rem;
+            background: linear-gradient(135deg, rgba(0,170,255,0.08) 0%, transparent 60%);
+            border-bottom: 1px solid var(--cv-border);
+        }
+
+        .cv-photo {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center 5%;
+            border: 3px solid var(--cv-accent);
+            box-shadow: 0 0 25px rgba(0,170,255,0.25);
+            flex-shrink: 0;
+        }
+
+        .cv-header-right { flex: 1; min-width: 0; }
+
+        .cv-name {
+            font-size: 1.9rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, var(--cv-text) 0%, var(--cv-accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.25rem;
+        }
+
+        .cv-role {
+            color: var(--cv-text-sec);
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 0.8rem;
+        }
+
+        .cv-contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem 1.2rem;
+        }
+
+        .cv-contact-row span {
+            font-size: 0.78rem;
+            color: var(--cv-text-muted);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .cv-contact-row i {
+            color: var(--cv-accent);
+            font-size: 0.72rem;
+        }
+
+        /* ===== CV BODY (2 columns) ===== */
+        .cv-body {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+        }
+
+        /* Sidebar */
+        .cv-sidebar {
+            background: var(--cv-sidebar-bg);
+            padding: 2rem 1.5rem;
+            border-right: 1px solid var(--cv-border);
+        }
+
+        /* Main */
+        .cv-main {
+            padding: 2rem 2.5rem;
+        }
+
+        /* ===== CV SECTION ===== */
+        .cv-section {
+            margin-bottom: 1.8rem;
+        }
+        .cv-section:last-child { margin-bottom: 0; }
+
+        .cv-section-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--cv-accent);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--cv-border);
+        }
+
+        .cv-section-title i {
+            font-size: 0.8rem;
+        }
+
+        /* ===== ENTRIES ===== */
+        .cv-entry {
+            margin-bottom: 1.2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.04);
+        }
+        .cv-entry:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .cv-entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 0.5rem;
+        }
+
+        .cv-entry h3 {
+            font-size: 0.92rem;
+            font-weight: 600;
+            color: var(--cv-text);
+            margin-bottom: 0.15rem;
+        }
+
+        .cv-entry-sub {
+            font-size: 0.82rem;
+            color: var(--cv-text-muted);
+            margin-bottom: 0.4rem;
+        }
+
+        .cv-entry-date {
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: var(--cv-accent);
+            background: rgba(0,170,255,0.1);
+            padding: 0.15rem 0.55rem;
+            border-radius: 999px;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        /* ===== CV TEXT ===== */
+        .cv-text {
+            font-size: 0.85rem;
+            color: var(--cv-text-sec);
+            line-height: 1.7;
+        }
+
+        /* ===== CV LISTS ===== */
+        .cv-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .cv-list li {
+            position: relative;
+            padding-left: 1rem;
+            font-size: 0.84rem;
+            color: var(--cv-text-sec);
+            margin-bottom: 0.3rem;
+            line-height: 1.5;
+        }
+
+        .cv-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.55rem;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--cv-accent);
+        }
+
+        /* ===== CV TAGS ===== */
+        .cv-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+        }
+
+        .cv-tags span {
+            background: rgba(0,170,255,0.1);
+            color: var(--cv-accent);
+            padding: 0.2rem 0.55rem;
+            border-radius: 999px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            border: 1px solid rgba(0,170,255,0.15);
+        }
+
+        /* ===== CV SKILLS ===== */
+        .cv-skills {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .cv-skill-group h3 {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--cv-text);
+            margin-bottom: 0.4rem;
+        }
+
+        /* ===== CV LANGUAGES ===== */
+        .cv-lang {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.3rem 0;
+            font-size: 0.84rem;
+            color: var(--cv-text-sec);
+        }
+
+        .cv-lang-level {
+            font-size: 0.72rem;
+            color: var(--cv-accent);
+            font-weight: 600;
+        }
+
+        /* ===== CV PROJECTS GRID ===== */
+        .cv-project-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.8rem;
+        }
+
+        .cv-project {
+            background: var(--cv-card);
+            border: 1px solid var(--cv-border);
+            border-radius: 10px;
+            padding: 1rem;
+            transition: border-color 0.25s ease;
+        }
+
+        .cv-project:hover {
+            border-color: var(--cv-accent);
+        }
+
+        .cv-project h3 {
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: var(--cv-text);
+            margin-bottom: 0.25rem;
+        }
+
+        .cv-project p {
+            font-size: 0.78rem;
+            color: var(--cv-text-muted);
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+        }
+
+        /* ===== CV FOOTER ===== */
+        .cv-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.8rem 2.5rem;
+            border-top: 1px solid var(--cv-border);
+            font-size: 0.72rem;
+            color: var(--cv-text-muted);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .cv-topbar {
+                flex-wrap: wrap;
+                gap: 0.5rem;
+                padding: 0.5rem 1rem;
+            }
+
+            .cv-page {
+                margin: 0.5rem;
+                border-radius: 12px;
+            }
+
+            .cv-header {
+                flex-direction: column;
+                text-align: center;
+                padding: 2rem 1.5rem;
+                gap: 1.2rem;
+            }
+
+            .cv-photo {
+                width: 90px;
+                height: 90px;
+            }
+
+            .cv-contact-row {
+                justify-content: center;
+            }
+
+            .cv-body {
+                grid-template-columns: 1fr;
+            }
+
+            .cv-sidebar {
+                border-right: none;
+                border-bottom: 1px solid var(--cv-border);
+                padding: 1.5rem;
+            }
+
+            .cv-main {
+                padding: 1.5rem;
+            }
+
+            .cv-project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cv-entry-header {
+                flex-direction: column;
+                gap: 0.2rem;
+            }
+
+            .cv-entry-date {
+                align-self: flex-start;
+            }
+
+            .cv-footer {
+                flex-direction: column;
+                gap: 0.25rem;
+                text-align: center;
+                padding: 0.8rem 1.5rem;
+            }
+        }
+
+        /* ===== PRINT ===== */
+        @media print {
+            body { background: #fff; color: #111; }
+
+            .cv-topbar { display: none !important; }
+
+            .cv-page {
+                margin: 0;
+                border: none;
+                border-radius: 0;
+                box-shadow: none;
+                max-width: 100%;
+                background: #fff;
+            }
+
+            .cv-header {
+                background: none;
+                border-bottom: 2px solid #00aaff;
+                padding: 1rem 1.5rem;
+            }
+
+            .cv-name {
+                -webkit-text-fill-color: #111;
+                color: #111;
+            }
+
+            .cv-photo {
+                border-color: #00aaff;
+                box-shadow: none;
+                width: 80px;
+                height: 80px;
+            }
+
+            .cv-sidebar {
+                background: #f8f8f8;
+            }
+
+            .cv-body {
+                grid-template-columns: 260px 1fr;
+            }
+
+            .cv-section-title {
+                color: #00aaff;
+                border-bottom-color: #ddd;
+            }
+
+            .cv-entry h3 { color: #111; }
+            .cv-entry-sub { color: #555; }
+            .cv-text { color: #333; }
+            .cv-list li { color: #333; }
+            .cv-list li::before { background: #00aaff; }
+            .cv-tags span { background: #eef7ff; color: #0088cc; border-color: #cce5ff; }
+            .cv-entry-date { background: #eef7ff; color: #0088cc; }
+            .cv-project { background: #f9f9f9; border-color: #ddd; }
+            .cv-project h3 { color: #111; }
+            .cv-project p { color: #555; }
+            .cv-lang { color: #333; }
+            .cv-lang-level { color: #0088cc; }
+            .cv-contact-row span { color: #555; }
+            .cv-contact-row i { color: #0088cc; }
+            .cv-skill-group h3 { color: #111; }
+
+            .cv-footer {
+                border-top: 1px solid #ddd;
+                color: #999;
+            }
+
+            .cv-card, .cv-project { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top bar (screen only) -->
+    <div class="cv-topbar" id="cvTopbar">
+        <a href="index.html" class="cv-topbar-brand">
+            <i class="fas fa-arrow-left"></i> Retour au portfolio
+        </a>
+        <div class="cv-topbar-actions">
+            <button id="cvPrint" class="btn-sm btn-primary" type="button">
+                <i class="fas fa-download"></i> Exporter PDF
+            </button>
+            <a href="index.html#contact" class="btn-sm btn-secondary">
+                <i class="fas fa-envelope"></i> Contact
+            </a>
+        </div>
+    </div>
+
+    <!-- CV Document -->
+    <div class="cv-page">
+        <!-- Header -->
+        <header class="cv-header">
+            <div class="cv-header-left">
+                <img src="images/jm.webp" alt="Jonathan Musumba" class="cv-photo">
+            </div>
+            <div class="cv-header-right">
+                <h1 class="cv-name">Jonathan MUSUMBA</h1>
+                <p class="cv-role">Développeur Python, Flutter & IA — CEO d'EJYISOFT</p>
+                <div class="cv-contact-row">
+                    <span><i class="fas fa-map-marker-alt"></i> Lubumbashi, RDC</span>
+                    <span><i class="fas fa-phone"></i> +243 820 066 591</span>
+                    <span><i class="fas fa-globe"></i> jomusumba.me</span>
+                    <span><i class="fab fa-github"></i> github.com/Jomusumba</span>
+                    <span><i class="fab fa-linkedin"></i> /in/jomusumba</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Body: 2 columns -->
+        <div class="cv-body">
+            <!-- Left Column -->
+            <aside class="cv-sidebar">
+                <section class="cv-section">
+                    <h2 class="cv-section-title"><i class="fas fa-user"></i> Profil</h2>
+                    <p class="cv-text">
+                        Développeur passionné spécialisé en Python, Flutter et Intelligence Artificielle. CEO et fondateur d'EJYISOFT, je crée des solutions tech utiles, fiables et accessibles. Expertise en chatbots intelligents, applications desktop/mobile et community management.
+                    </p>
+                </section>
+
+                <section class="cv-section">
+                    <h2 class="cv-section-title"><i class="fas fa-cubes"></i> Stack technique</h2>
+                    <div class="cv-skills">
+                        <div class="cv-skill-group">
+                            <h3>Backend & Desktop</h3>
+                            <div class="cv-tags">
+                                <span>Python</span><span>FastAPI</span><span>CustomTkinter</span><span>Pandas</span>
+                            </div>
+                        </div>
+                        <div class="cv-skill-group">
+                            <h3>Mobile</h3>
+                            <div class="cv-tags">
+                                <span>Flutter</span><span>Dart</span><span>Firebase</span><span>Supabase</span>
+                            </div>
+                        </div>
+                        <div class="cv-skill-group">
+                            <h3>IA / ML</h3>
+                            <div class="cv-tags">
+                                <span>Scikit-learn</span><span>TensorFlow</span><span>NLP</span><span>OpenCV</span>
+                            </div>
+                        </div>
+                        <div class="cv-skill-group">
+                            <h3>Web & Outils</h3>
+                            <div class="cv-tags">
+                                <span>HTML/CSS/JS</span><span>MySQL</span><span>MongoDB</span><span>Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="cv-section">
+                    <h2 class="cv-section-title"><i class="fas fa-graduation-cap"></i> Formation</h2>
+                    <div class="cv-entry">
+                        <h3>BAC +3 Génie Logiciel</h3>
+                        <p class="cv-entry-sub">Université Protestante de Lubumbashi</p>
+                        <span class="cv-entry-date">En cours</span>
+                    </div>
+                    <div class="cv-entry">
+                        <h3>Certificat Python</h3>
+                        <p class="cv-entry-sub">Udemy</p>
+                    </div>
+                    <div class="cv-entry">
+                        <h3>La tech c'est du concret</h3>
+                        <p class="cv-entry-sub">Trace+</p>
+                    </div>
+                    <div class="cv-entry">
+                        <h3>Certificat MySQL</h3>
+                        <p class="cv-entry-sub">Cursa</p>
+                    </div>
+                    <div class="cv-entry">
+                        <h3>Certificat Microsoft Word</h3>
+                        <p class="cv-entry-sub">Cursa</p>
+                    </div>
+                </section>
+
+                <section class="cv-section">
+                    <h2 class="cv-section-title"><i class="fas fa-language"></i> Langues</h2>
+                    <div class="cv-lang">
+                        <span>Français</span><span class="cv-lang-level">Courant</span>
+                    </div>
+                    <div class="cv-lang">
+                        <span>Swahili</span><span class="cv-lang-level">Courant</span>
+                    </div>
+                    <div class="cv-lang">
+                        <span>Anglais</span><span class="cv-lang-level">Intermédiaire</span>
+                    </div>
+                </section>
+            </aside>
+
+            <!-- Right Column (main content) -->
+            <main class="cv-main">
+                <section class="cv-section">
+                    <h2 class="cv-section-title"><i class="fas fa-briefcase"></i> Expériences professionnelles</h2>
+
+                    <div class="cv-entry">
+                        <div class="cv-entry-header">
+                            <h3>CEO & Fondateur</h3>
+                            <span class="cv-entry-date">2025 — Présent</span>
+                        </div>
+                        <p class="cv-entry-sub">EJYISOFT · Lubumbashi</p>
+                        <ul class="cv-list">
+                            <li>Direction et gestion d'une entreprise de développement logiciel</li>
+                            <li>Création de solutions Desktop (Python), Mobile (Flutter) et IA</li>
+                            <li>Gestion de projet, relation client et livraison de produits</li>
+                        </ul>
+                    </div>
+
+                    <div class="cv-entry">
+                        <div class="cv-entry-header">
+                            <h3>Community Manager</h3>
+                            <span class="cv-entry-date">2023 — Présent</span>
+                        </div>
+                        <p class="cv-entry-sub">Les Pépites de la RDC · YouTube</p>
+                        <ul class="cv-list">
+                            <li>Création et gestion de la chaîne YouTube</li>
+                            <li>Stratégie de contenu et croissance communautaire</li>
+                        </ul>
+                    </div>
+
+                    <div class="cv-entry">
+                        <div class="cv-entry-header">
+                            <h3>Community Manager</h3>
+                            <span class="cv-entry-date">2024 — Présent</span>
+                        </div>
+                        <p class="cv-entry-sub">AFRO-SOUL LAB · YouTube</p>
+                        <ul class="cv-list">
+                            <li>Branding, calendrier éditorial et modération communautaire</li>
+                        </ul>
+                    </div>
+
+                    <div class="cv-entry">
+                        <div class="cv-entry-header">
+                            <h3>Community Manager</h3>
+                            <span class="cv-entry-date">2025 — Présent</span>
+                        </div>
+                        <p class="cv-entry-sub">SmartCode Community · Facebook</p>
+                        <ul class="cv-list">
+                            <li>Animation de communauté tech et accompagnement des membres</li>
+                        </ul>
+                    </div>
+
+                    <div class="cv-entry">
+                        <div class="cv-entry-header">
+                            <h3>Developer Intern</h3>
+                            <span class="cv-entry-date">Stage BAC 1 & 3</span>
+                        </div>
+                        <p class="cv-entry-sub">DRHKAT · Lubumbashi</p>
+                        <ul class="cv-list">
+                            <li>Immersions professionnelles en développement logiciel</li>
+                        </ul>
+                    </div>
+
+                    <div class="cv-entry">
+                        <div class="cv-entry-header">
+                            <h3>Opérateur de Saisie</h3>
+                            <span class="cv-entry-date">Mission</span>
+                        </div>
+                        <p class="cv-entry-sub">CENI RDC</p>
+                        <ul class="cv-list">
+                            <li>Enrôlement des électeurs et assurance qualité des données</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="cv-section">
+                    <h2 class="cv-section-title"><i class="fas fa-project-diagram"></i> Projets clés</h2>
+
+                    <div class="cv-project-grid">
+                        <div class="cv-project">
+                            <h3>BETAI</h3>
+                            <p>App mobile de prédiction de résultats football par IA</p>
+                            <div class="cv-tags"><span>Flutter</span><span>Python</span><span>ML</span></div>
+                        </div>
+                        <div class="cv-project">
+                            <h3>GSchool</h3>
+                            <p>Logiciel open-source de gestion scolaire</p>
+                            <div class="cv-tags"><span>Python</span><span>MySQL</span><span>Desktop</span></div>
+                        </div>
+                        <div class="cv-project">
+                            <h3>RDCDEAL</h3>
+                            <p>Marketplace mobile de ventes et trocs en RDC</p>
+                            <div class="cv-tags"><span>Flutter</span><span>Firebase</span></div>
+                        </div>
+                        <div class="cv-project">
+                            <h3>UPLBot</h3>
+                            <p>Chatbot IA pour l'Université Protestante de Lubumbashi</p>
+                            <div class="cv-tags"><span>Python</span><span>NLP</span><span>Chatbot</span></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="cv-section">
+                    <h2 class="cv-section-title"><i class="fas fa-heart"></i> Centres d'intérêt</h2>
+                    <p class="cv-text">Intelligence Artificielle · Open Source · Automatisation · Community Building · Droits humains (bénévole Amnesty International)</p>
+                </section>
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="cv-footer">
+            <span>Jonathan Musumba — CV 2026</span>
+            <span>jomusumba.me</span>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('cvPrint')?.addEventListener('click', () => window.print());
+    </script>
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "vqe725u2z9");
+    </script>
+
+    <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2026/03/04/11/20260304114222-X85O6J59.js" defer></script>
+
+</body>
+</html>
