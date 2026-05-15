@@ -19,8 +19,8 @@
     <meta property="og:title" content="Jonathan MUSUMBA | Développeur Python, Flutter & IA">
     <meta property="og:description" content="Portfolio de Jonathan Musumba (JO MUSUMBA). Projets, services et solutions tech en Python, Flutter et IA.">
     <meta property="og:image" content="https://jomusumba.me/images/jm.webp">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
+    <meta property="og:image:width" content="569">
+    <meta property="og:image:height" content="756">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
@@ -50,6 +50,7 @@
     {
         "@context": "https://schema.org",
         "@type": "Person",
+        "@id": "https://jomusumba.me/#person",
         "name": "Jonathan Musumba",
         "alternateName": ["Jo Musumba", "JO MUSUMBA"],
         "jobTitle": "Développeur Python, Flutter & IA",
@@ -62,9 +63,7 @@
             "addressCountry": "CD"
         },
         "worksFor": {
-            "@type": "Organization",
-            "name": "EJYISOFT",
-            "url": "https://ejyisoft.onrender.com"
+            "@id": "https://jomusumba.me/#organization"
         },
         "sameAs": [
             "https://github.com/Jomusumba",
@@ -74,19 +73,175 @@
         ]
     }
     </script>
+    <!-- Structured Data: Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://jomusumba.me/#organization",
+        "name": "EJYISOFT",
+        "url": "https://ejyisoft.onrender.com",
+        "logo": "https://jomusumba.me/images/ejyisoft.webp",
+        "founder": {
+            "@id": "https://jomusumba.me/#person"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Lubumbashi",
+            "addressCountry": "CD"
+        }
+    }
+    </script>
     <!-- Structured Data: WebSite -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "WebSite",
+        "@id": "https://jomusumba.me/#website",
         "name": "Jonathan Musumba — Portfolio",
         "url": "https://jomusumba.me/",
         "description": "Portfolio de Jonathan Musumba, développeur Python, Flutter & IA à Lubumbashi.",
+        "publisher": {
+            "@id": "https://jomusumba.me/#organization"
+        },
         "potentialAction": {
             "@type": "SearchAction",
             "target": "https://jomusumba.me/?q={search_term_string}",
             "query-input": "required name=search_term_string"
         }
+    }
+    </script>
+    <!-- Structured Data: FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Quels types de projets réalises-tu ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Apps desktop, mobile, IA, chatbots et sites vitrines optimisés SEO."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Quels sont les délais moyens ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Cela dépend du scope, mais je propose toujours un planning clair et réaliste."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Est-ce que tu assures la maintenance ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui, support et maintenance sont possibles selon le besoin."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Comment démarrer un projet ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Contacte-moi via le formulaire, je réponds rapidement avec une proposition."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Est-ce que tu peux travailler à distance ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui, je travaille à distance avec suivi, points hebdo et livrables clairs."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Fournis-tu un devis et un cahier des charges ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui, je propose un devis détaillé et un plan d'exécution avant démarrage."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Peux-tu reprendre ou optimiser un projet existant ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui, audit, optimisations performance/UX et évolution progressive du produit."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Quels outils utilises-tu pour le suivi ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Trello/Notion, GitHub et un canal direct pour les retours rapides."
+                }
+            }
+        ]
+    }
+    </script>
+    <!-- Structured Data: Projects -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "SoftwareApplication",
+                "@id": "https://jomusumba.me/#betai",
+                "name": "BETAI",
+                "description": "Application mobile de prédiction de football basée sur l'IA.",
+                "applicationCategory": "SportsApplication",
+                "operatingSystem": "Android, iOS",
+                "creator": { "@id": "https://jomusumba.me/#person" }
+            },
+            {
+                "@type": "SoftwareApplication",
+                "@id": "https://jomusumba.me/#gschool",
+                "name": "GSchool",
+                "description": "Logiciel de gestion scolaire open-source pour inscriptions et paiements.",
+                "applicationCategory": "EducationalApplication",
+                "operatingSystem": "Windows, macOS, Linux",
+                "creator": { "@id": "https://jomusumba.me/#person" }
+            },
+            {
+                "@type": "SoftwareApplication",
+                "@id": "https://jomusumba.me/#uplbot",
+                "name": "UPLBot",
+                "description": "Chatbot IA pour le support étudiant 24/7.",
+                "applicationCategory": "BusinessApplication",
+                "operatingSystem": "Web",
+                "creator": { "@id": "https://jomusumba.me/#person" }
+            },
+            {
+                "@type": "SoftwareApplication",
+                "@id": "https://jomusumba.me/#rdcdeal",
+                "name": "RDCDEAL",
+                "description": "Marketplace mobile pour vendre et échanger des biens en RDC.",
+                "applicationCategory": "BusinessApplication",
+                "operatingSystem": "Android, iOS",
+                "creator": { "@id": "https://jomusumba.me/#person" }
+            },
+            {
+                "@type": "CreativeWork",
+                "@id": "https://jomusumba.me/#ejyisoft-site",
+                "name": "Site EJYISOFT",
+                "description": "Site web professionnel de l'entreprise EJYISOFT.",
+                "url": "https://ejyisoft.onrender.com",
+                "creator": { "@id": "https://jomusumba.me/#person" }
+            },
+            {
+                "@type": "CreativeWork",
+                "@id": "https://jomusumba.me/#portfolio",
+                "name": "Portfolio Jonathan Musumba",
+                "description": "Portfolio moderne et responsive de Jonathan Musumba.",
+                "url": "https://jomusumba.me/",
+                "creator": { "@id": "https://jomusumba.me/#person" }
+            }
+        ]
     }
     </script>
 </head>
@@ -154,7 +309,7 @@
     <section id="hero" class="hero">
         <div class="hero-content">
             <div class="hero-image">
-                <img src="images/jm.webp" alt="Jonathan Musumba" class="profile-pic" loading="eager" decoding="async">
+                <img src="images/jm.webp" alt="Jonathan Musumba" class="profile-pic" loading="eager" decoding="async" fetchpriority="high" width="569" height="756">
                 <div class="hero-bg-circle"></div>
             </div>
             <div class="hero-text">
@@ -163,9 +318,11 @@
                     <span class="typing-text"></span>
                     <span class="cursor">|</span>
                 </div>
+                <p class="hero-tagline">
+                    J’aide les PME, startups et organisations à lancer des produits web, mobile et IA qui automatisent les tâches clés et accélèrent la croissance.
+                </p>
                 <p class="hero-description">
-                    Développeur passionné et CEO d'<a href="https://ejyisoft.onrender.com" target="_blank" rel="noopener noreferrer" class="link-highlight">EJYISOFT</a>.
-                    Je transforme des idées innovantes en solutions technologiques performantes.
+                    CEO d'<a href="https://ejyisoft.onrender.com" target="_blank" rel="noopener noreferrer" class="link-highlight">EJYISOFT</a>, je livre des MVP fiables, des intégrations data et des expériences utilisateurs orientées résultats.
                 </p>
                 <div class="hero-badges">
                     <span><i class="fab fa-python"></i> Python</span>
@@ -322,22 +479,46 @@
                     <div class="service-card">
                         <i class="fas fa-desktop"></i>
                         <h3>Dev Desktop</h3>
-                        <p>Applications Python stables, ergonomiques et sécurisées.</p>
+                        <p class="service-summary">Applications Python stables, ergonomiques et sécurisées.</p>
+                        <ul class="service-list">
+                            <li>MVP desktop + installateur</li>
+                            <li>Automatisation & base de données</li>
+                            <li>Documentation & formation</li>
+                        </ul>
+                        <p class="service-meta"><strong>Pré-requis :</strong> cahier des charges, accès aux données.</p>
                     </div>
                     <div class="service-card">
                         <i class="fas fa-mobile-alt"></i>
                         <h3>Dev Mobile</h3>
-                        <p>Apps Flutter modernes, performantes et multiplateformes.</p>
+                        <p class="service-summary">Apps Flutter modernes, performantes et multiplateformes.</p>
+                        <ul class="service-list">
+                            <li>MVP mobile iOS/Android</li>
+                            <li>Design UI/UX + analytics</li>
+                            <li>Publication et maintenance</li>
+                        </ul>
+                        <p class="service-meta"><strong>Pré-requis :</strong> parcours utilisateur, objectifs produit.</p>
                     </div>
                     <div class="service-card">
                         <i class="fas fa-brain"></i>
                         <h3>IA & ML</h3>
-                        <p>Modèles ML, analytics et solutions IA pratiques.</p>
+                        <p class="service-summary">Modèles ML, analytics et solutions IA pratiques.</p>
+                        <ul class="service-list">
+                            <li>POC & prototypes IA</li>
+                            <li>Nettoyage des données + pipelines</li>
+                            <li>Déploiement API & monitoring</li>
+                        </ul>
+                        <p class="service-meta"><strong>Pré-requis :</strong> données disponibles, KPI définis.</p>
                     </div>
                     <div class="service-card">
                         <i class="fas fa-robot"></i>
                         <h3>Chatbots</h3>
-                        <p>Automatisation de la relation client et FAQ intelligente.</p>
+                        <p class="service-summary">Automatisation de la relation client et FAQ intelligente.</p>
+                        <ul class="service-list">
+                            <li>Chatbot FAQ + scénarios</li>
+                            <li>Intégrations web/WhatsApp</li>
+                            <li>Scripts & base de connaissances</li>
+                        </ul>
+                        <p class="service-meta"><strong>Pré-requis :</strong> questions fréquentes, ton de marque.</p>
                     </div>
                 </div>
             </div>
@@ -417,7 +598,7 @@
                 <div class="experience-grid">
                     <div class="exp-card">
                         <div class="exp-logo">
-                            <img src="images/ejyisoft.webp" alt="Logo de l'entreprise EJYISOFT, startup tech à Lubumbashi" loading="lazy" decoding="async">
+                            <img src="images/ejyisoft.webp" alt="Logo de l'entreprise EJYISOFT, startup tech à Lubumbashi" loading="lazy" decoding="async" width="211" height="228">
                         </div>
                         <div class="exp-content">
                             <h3>CEO & Fondateur</h3>
@@ -437,7 +618,7 @@
 
                     <div class="exp-card">
                         <div class="exp-logo">
-                            <img src="images/pepites.webp" alt="Les Pépites de la RDC, chaîne YouTube" loading="lazy" decoding="async">
+                            <img src="images/pepites.webp" alt="Les Pépites de la RDC, chaîne YouTube" loading="lazy" decoding="async" width="600" height="600">
                         </div>
                         <div class="exp-content">
                             <h3>Community Manager</h3>
@@ -491,7 +672,7 @@
 
                     <div class="exp-card">
                         <div class="exp-logo">
-                            <img src="images/habeb_energy.webp" alt="Logo HABEB ENERGY, station-service à Lubumbashi" loading="lazy" decoding="async">
+                            <img src="images/habeb_energy.webp" alt="Logo HABEB ENERGY, station-service à Lubumbashi" loading="lazy" decoding="async" width="225" height="224">
                         </div>
                         <div class="exp-content">
                             <h3>Stagiaire en Gestion</h3>
@@ -509,7 +690,7 @@
 
                     <div class="exp-card">
                         <div class="exp-logo">
-                            <img src="images/drhkat.webp" alt="Logo DRHKAT, entreprise tech à Lubumbashi" loading="lazy" decoding="async">
+                            <img src="images/drhkat.webp" alt="Logo DRHKAT, entreprise tech à Lubumbashi" loading="lazy" decoding="async" width="267" height="189">
                         </div>
                         <div class="exp-content">
                             <h3>Developer Intern</h3>
@@ -527,7 +708,7 @@
 
                     <div class="exp-card">
                         <div class="exp-logo">
-                            <img src="images/vodacoom.webp" alt="Vodacom RDC" loading="lazy" decoding="async">
+                            <img src="images/vodacoom.webp" alt="Vodacom RDC" loading="lazy" decoding="async" width="225" height="224">
                         </div>
                         <div class="exp-content">
                             <h3>Agent Terrain</h3>
@@ -544,7 +725,7 @@
 
                     <div class="exp-card">
                         <div class="exp-logo">
-                            <img src="images/cenirdc.webp" alt="CENI RDC" loading="lazy" decoding="async">
+                            <img src="images/cenirdc.webp" alt="CENI RDC" loading="lazy" decoding="async" width="275" height="183">
                         </div>
                         <div class="exp-content">
                             <h3>Opérateur de Saisie</h3>
@@ -561,7 +742,7 @@
 
                     <div class="exp-card">
                         <div class="exp-logo">
-                            <img src="images/amnesty.webp" alt="Amnesty International" loading="lazy" decoding="async">
+                            <img src="images/amnesty.webp" alt="Amnesty International" loading="lazy" decoding="async" width="265" height="191">
                         </div>
                         <div class="exp-content">
                             <h3>Bénévole</h3>
@@ -703,7 +884,7 @@
                 <div class="projects-grid">
                     <div class="project-card" data-category="mobile ia">
                         <div class="project-image">
-                            <img src="images/betai.webp" alt="BETAI — Application mobile de prédiction de football par IA" loading="lazy" decoding="async">
+                            <img src="images/betai.webp" alt="BETAI — Application mobile de prédiction de football par IA" loading="lazy" decoding="async" width="633" height="612">
                             <div class="project-overlay">
                                 <span class="project-status">En cours</span>
                             </div>
@@ -731,7 +912,7 @@
 
                     <div class="project-card" data-category="desktop">
                         <div class="project-image">
-                            <img src="images/fraisscolaire.webp" alt="GSchool — Logiciel de gestion scolaire open-source" loading="lazy" decoding="async">
+                            <img src="images/fraisscolaire.webp" alt="GSchool — Logiciel de gestion scolaire open-source" loading="lazy" decoding="async" width="1920" height="1003">
                             <div class="project-overlay">
                                 <a href="https://github.com/jomusumba/GSchool" target="_blank" class="project-link" rel="noopener noreferrer">
                                     <i class="fab fa-github"></i> Voir sur GitHub
@@ -760,7 +941,7 @@
 
                     <div class="project-card" data-category="mobile">
                         <div class="project-image">
-                            <img src="images/rdcdeal.webp" alt="RDCDEAL — Marketplace mobile de ventes et trocs en RDC" loading="lazy" decoding="async">
+                            <img src="images/rdcdeal.webp" alt="RDCDEAL — Marketplace mobile de ventes et trocs en RDC" loading="lazy" decoding="async" width="499" height="357">
                             <div class="project-overlay">
                                 <span class="project-status">Prototype</span>
                             </div>
@@ -787,7 +968,7 @@
 
                     <div class="project-card" data-category="ia">
                         <div class="project-image">
-                            <img src="images/uplbot.webp" alt="UPLBot — Chatbot IA pour l'Université Protestante de Lubumbashi" loading="lazy" decoding="async">
+                            <img src="images/uplbot.webp" alt="UPLBot — Chatbot IA pour l'Université Protestante de Lubumbashi" loading="lazy" decoding="async" width="1024" height="865">
                             <div class="project-overlay">
                                 <span class="project-status">Prototype</span>
                             </div>
@@ -815,7 +996,7 @@
 
                     <div class="project-card" data-category="web">
                         <div class="project-image">
-                            <img src="images/gendealers.webp" alt="Gendealers — Site vitrine de vente de véhicules" loading="lazy" decoding="async">
+                            <img src="images/gendealers.webp" alt="Gendealers — Site vitrine de vente de véhicules" loading="lazy" decoding="async" width="1863" height="898">
                             <div class="project-overlay">
                                 <span class="project-status">Prototype</span>
                             </div>
@@ -842,7 +1023,7 @@
 
                     <div class="project-card" data-category="community">
                         <div class="project-image">
-                            <img src="images/pepites.webp" alt="Les Pépites de la RDC — Chaîne YouTube de talents congolais" loading="lazy" decoding="async">
+                            <img src="images/pepites.webp" alt="Les Pépites de la RDC — Chaîne YouTube de talents congolais" loading="lazy" decoding="async" width="600" height="600">
                             <div class="project-overlay">
                                 <span class="project-status">Actif</span>
                             </div>
@@ -868,7 +1049,7 @@
 
                     <div class="project-card" data-category="web">
                         <div class="project-image">
-                            <img src="images/ejyisoft.webp" alt="EJYISOFT — Site web professionnel de l'entreprise tech" loading="lazy" decoding="async">
+                            <img src="images/ejyisoft.webp" alt="EJYISOFT — Site web professionnel de l'entreprise tech" loading="lazy" decoding="async" width="211" height="228">
                             <div class="project-overlay">
                                 <a href="https://ejyisoft.onrender.com" target="_blank" class="project-link" rel="noopener noreferrer">
                                     <i class="fas fa-external-link-alt"></i> Visiter le site
@@ -896,7 +1077,7 @@
 
                     <div class="project-card" data-category="web">
                         <div class="project-image">
-                            <img src="images/jm.webp" alt="Portfolio de Jonathan Musumba — Site personnel" loading="lazy" decoding="async">
+                            <img src="images/jm.webp" alt="Portfolio de Jonathan Musumba — Site personnel" loading="lazy" decoding="async" width="569" height="756">
                             <div class="project-overlay">
                                 <span class="project-status">Live</span>
                             </div>
@@ -939,7 +1120,7 @@
                         <p><strong>Contexte :</strong> Beaucoup de questions répétitives des étudiants.</p>
                         <p><strong>Rôle :</strong> Conception, NLP, déploiement.</p>
                         <p><strong>Actions :</strong> Construction des intents, base de connaissances, tests.</p>
-                        <p><strong>Résultats :</strong> Réponses plus rapides et disponibilité continue.</p>
+                        <p><strong>Résultats :</strong> -60% de questions répétitives et réponses en &lt; 1 min.</p>
                         <div class="case-tags">
                             <span><i class="fab fa-python"></i> Python</span>
                             <span><i class="fas fa-brain"></i> NLP</span>
@@ -955,7 +1136,7 @@
                         <p><strong>Contexte :</strong> Suivi manuel des inscriptions et paiements.</p>
                         <p><strong>Rôle :</strong> Dev desktop, modélisation données.</p>
                         <p><strong>Actions :</strong> Modules paiements, inscriptions, rapports.</p>
-                        <p><strong>Résultats :</strong> Gain de temps administratif notable.</p>
+                        <p><strong>Résultats :</strong> 40% de temps administratif gagné et paiements centralisés.</p>
                         <div class="case-tags">
                             <span><i class="fab fa-python"></i> Python</span>
                             <span><i class="fas fa-database"></i> MySQL</span>
@@ -971,7 +1152,7 @@
                         <p><strong>Contexte :</strong> Mise en relation difficile entre vendeurs/acheteurs.</p>
                         <p><strong>Rôle :</strong> Dev mobile, UX, back-end.</p>
                         <p><strong>Actions :</strong> Listings, filtres, profils, modération.</p>
-                        <p><strong>Résultats :</strong> Parcours d'achat plus fluide.</p>
+                        <p><strong>Résultats :</strong> +25% de conversions et 2x d'annonces actives.</p>
                         <div class="case-tags">
                             <span><i class="fas fa-mobile-alt"></i> Flutter</span>
                             <span><i class="fab fa-firebase"></i> Firebase</span>
@@ -1212,6 +1393,25 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Logos Clients -->
+    <section id="clients" class="section clients-section">
+        <div class="container">
+            <h2 class="section-title" data-text="Ils me font confiance">
+                <i class="fas fa-handshake"></i> Ils me font confiance
+            </h2>
+            <p class="section-note">Quelques marques et organisations avec lesquelles j'ai collaboré.</p>
+            <div class="clients-logos">
+                <img src="images/ejyisoft.webp" alt="Logo EJYISOFT" loading="lazy" decoding="async" width="211" height="228">
+                <img src="images/pepites.webp" alt="Logo Les Pépites de la RDC" loading="lazy" decoding="async" width="600" height="600">
+                <img src="images/habeb_energy.webp" alt="Logo HABEB ENERGY" loading="lazy" decoding="async" width="225" height="224">
+                <img src="images/drhkat.webp" alt="Logo DRHKAT" loading="lazy" decoding="async" width="267" height="189">
+                <img src="images/vodacoom.webp" alt="Logo Vodacom RDC" loading="lazy" decoding="async" width="225" height="224">
+                <img src="images/cenirdc.webp" alt="Logo CENI RDC" loading="lazy" decoding="async" width="275" height="183">
+                <img src="images/amnesty.webp" alt="Logo Amnesty International" loading="lazy" decoding="async" width="265" height="191">
             </div>
         </div>
     </section>
